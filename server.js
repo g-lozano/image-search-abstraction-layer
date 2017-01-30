@@ -6,7 +6,7 @@ var app = express()
 
 var flickrAPIKey = process.env.FLICKR_API_KEY
 var mongodbURL = process.env.MONGOLAB_URI
-var flickrURL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&sort=relevance&format=json&nojsoncallback=1&per_page=10&" + flickrAPIKey
+var flickrURL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&sort=relevance&format=json&nojsoncallback=1&per_page=10&api_key=" + flickrAPIKey
 
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/html/index.html')
