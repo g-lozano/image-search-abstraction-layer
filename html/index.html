@@ -1,1 +1,62 @@
-index
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <title>Image Search Abstraction Layer</title>
+    <div class="container">
+        <div class="page-header">
+            <h1>Image Search Abstraction Layer</h1>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">User Stories</h3>
+            </div>
+            <div class="panel-body">
+
+                <p><b>1.</b> I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</p>
+                <p><b>2.</b> I can paginate through the responses by adding a ?offset=2 parameter to the URL.</p>
+                <p><b>3.</b> I can get a list of the most recently submitted search strings.</p>
+
+            </div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">How to Use</h3>
+            </div>
+            <div class="panel-body">
+                <table>
+                    <ul class="list-group">
+                        <p>Pass a search term by adding the following:</p>
+                        <p><code>/api/imagesearch/&ltsearch term&gt</code></p>
+                        <p>View a specific page of the results by passing an offset:</p>
+                        <p><code>/api/imagesearch/&ltsearch term&gt?offset=2</code></p>
+                        <p>To view the most recent 10 searches, add the following parameters to the end of the URL</p>
+                        <p><code>/api/latest/imagesearch/</code></p>
+                    </ul>
+                </table>
+            </div>
+        </div>
+        
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Example URL</h3>
+            </div>
+            <div class="panel-body">
+                <table>
+                    <ul class="list-group">
+                        <p><code>http://image-search-gl.herokuapp.com/api/imagesearch/puppies</code></p>
+                        <p><code>http://image-search-gl.herokuapp.com/api/imagesearch/funny kittens?offset=2</code></p>
+                    </ul>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
